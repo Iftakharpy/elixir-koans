@@ -1,3 +1,5 @@
+# credo:disable-for-this-file Credo.Check.Refactor.UnlessWithElse
+# credo:disable-for-this-file Credo.Check.Refactor.CondStatements
 defmodule ControlFlow do
   @moduledoc false
   use Koans

@@ -1,3 +1,5 @@
+# credo:disable-for-this-file Credo.Check.Warning.IoInspect
+# credo:disable-for-this-file Credo.Check.Refactor.MapJoin
 defmodule PipeOperator do
   @moduledoc false
   use Koans
@@ -88,7 +90,6 @@ defmodule PipeOperator do
     assert result == ___
   end
 
-  # TODO: Fix this example. It doesn't illustrate the point well.
   koan "The then/2 function is useful when you need to call a function that doesn't take the piped value as first argument" do
     result =
       [1, 2, 3]
@@ -169,6 +170,7 @@ defmodule PipeOperator do
 
   koan "Pipes can be used in function definitions for clean APIs" do
     defmodule TextProcessor do
+      @moduledoc false
       def clean_and_count(text) do
         text
         |> String.trim()

@@ -162,6 +162,7 @@ defmodule GenServers do
   end
 
   defmodule TimeoutServer do
+    @moduledoc false
     use GenServer
 
     def start_link(timeout) do
@@ -197,6 +198,7 @@ defmodule GenServers do
   end
 
   defmodule CrashableServer do
+    @moduledoc false
     use GenServer
 
     def start_link(initial) do
